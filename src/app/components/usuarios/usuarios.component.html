@@ -1,1 +1,20 @@
-<p>usuarios works!</p>
+<div class="container mt-4">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Normalize Username</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of usuarios; let i = index">
+            <tr>
+                <td>{{ item.id }}</td>
+                <td>{{ item.userName }}</td>
+                <td>{{ item.normalizedUserName }}</td>
+                <td>{{ item.email }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
